@@ -5,6 +5,13 @@
   --lasalle-gris: #B2B2B1;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   background-color: #f8f9fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,6 +19,10 @@ body {
 
 .header-lasalle {
   background-color: var(--lasalle-azul);
+}
+
+main {
+  flex: 1;
 }
 
 .titulo-form {
@@ -44,4 +55,10 @@ body {
 .index-card {
   width: 18rem;
   height: 15rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
